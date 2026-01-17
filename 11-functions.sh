@@ -28,21 +28,21 @@ else
     echo "mysql already installed"
 fi
 
-dnf list installed python
-if [ $? -ne 0 ]
-then
-    echo "Python is need to be insatlled"
-    dnf install python -y
-    validate $? "python"
-else
-    echo "python already installed"
-fi
+# dnf list installed python
+# if [ $? -ne 0 ]
+# then
+#     echo "Python is need to be insatlled"
+#     dnf install python -y
+#     validate $? "python"
+# else
+#     echo "python already installed"
+# fi
 
-dnf list installed nginx
-if [ $? -ne 0 ]
-then
-    dnf install nginx
-    validate $? "nginx"
-else
-    echo "already installed"
-fi
+# dnf list installed nginx
+# if [ $? -ne 0 ]
+# then
+#     dnf install nginx
+#     validate $? "nginx"
+# else
+#     echo "already installed"
+# fi
